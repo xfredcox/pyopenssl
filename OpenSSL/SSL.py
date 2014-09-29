@@ -40,14 +40,14 @@ SSLEAY_BUILT_ON = _lib.SSLEAY_BUILT_ON
 SENT_SHUTDOWN = _lib.SSL_SENT_SHUTDOWN
 RECEIVED_SHUTDOWN = _lib.SSL_RECEIVED_SHUTDOWN
 
-SSLv2_METHOD = 1
+#SSLv2_METHOD = 1
 SSLv3_METHOD = 2
 SSLv23_METHOD = 3
 TLSv1_METHOD = 4
 TLSv1_1_METHOD = 5
 TLSv1_2_METHOD = 6
 
-OP_NO_SSLv2 = _lib.SSL_OP_NO_SSLv2
+#OP_NO_SSLv2 = _lib.SSL_OP_NO_SSLv2
 OP_NO_SSLv3 = _lib.SSL_OP_NO_SSLv3
 OP_NO_TLSv1 = _lib.SSL_OP_NO_TLSv1
 
@@ -247,7 +247,7 @@ class Context(object):
     new SSL connections.
     """
     _methods = {
-        SSLv2_METHOD: "SSLv2_method",
+#        SSLv2_METHOD: "SSLv2_method",
         SSLv3_METHOD: "SSLv3_method",
         SSLv23_METHOD: "SSLv23_method",
         TLSv1_METHOD: "TLSv1_method",
